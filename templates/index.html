@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Headless Mode</title>
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <title>Headless Terminal</title>
   </head>
   <body>
-      <div>Headless Mode</div>
+    <header class="flex-center">
+      <h1>UI Application - Headless Mode</h1>
+    </header>
+    <section class="flex-center">
+      <img src="../assets/images/azry-logo-transparent.png" alt="AzRy Logo"/>
+      <div class="block-wrapper">
+        <div class="gray-outline">
+          <div class="instruction-wrapper">
+            <p>To establish a connection to the terminal, follow these steps:</p>
+            <div class="steps-wrapper">
+              <ol>
+                <li>Create a .env file in the root directory of your React application if one doesn't exists already.</li>
+                <li>Inside the .env file, add following line:</li>
+              </ol>
+              <div class="env-variable">REACT_APP_TERMINAL_IP=10.131.33.33</div>
+              <p>This environment variable will be used by your application to connect to the terminal.</p>
+            </div>            
+          </div>
+        </div>
+        <div class="gray-outline">
+          <div class="instruction-wrapper">
+            <ul>
+              <li><span>UI Application:</span> uiAppAzryDemov0.3</li>
+              <li><span>Terminal Application:</span> terminalAppv2.1</li>
+              <li><span>Terminal ID:</span> 420</li>
+              <li><span>SSTS Server:</span> ssts.azrycloud.com:80</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="flex-center">
+      <img src="../assets/images/azry-logo.png" alt="AzRy Logo"/>
+      <div>
+        <p>© AzRy LLC - 2004, All Rights Reserved</p>
+        <p>Address: 106 A. Beliashvili Street, Tbilisi 1059, Georgia</p>
+        <p>Phone: +995 (322) 555444</p>
+      </div>
+    </footer>
   </body>
 </html>

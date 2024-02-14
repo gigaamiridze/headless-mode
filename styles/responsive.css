@@ -1,0 +1,19 @@
+@media screen and (max-width: 1265px) {
+  .gray-outline:first-child .instruction-wrapper {
+    padding: 30px;
+  }
+
+  .steps-wrapper {
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1180px) { 
+  .gray-outline:first-child .instruction-wrapper {
+    row-gap: 20px;
+  }
+
+  .gray-outline:last-child .instruction-wrapper {
+    padding: 35px 55px;
+  }
+}

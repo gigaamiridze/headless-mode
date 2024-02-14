@@ -1,0 +1,153 @@
+:root {
+  --darkBlue: #003653;
+  --gray: #B9C5CC;
+  --lightGray: #CCD6DB;
+  --darkGray: #9b9b9b;
+  --fontFamily: 'Space Grotesk';
+}
+
+body {
+  font-family: var(--fontFamily);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 75% 1fr;
+}
+
+header h1 {
+  color: var(--darkBlue);
+  font-size: clamp(30px, 5vw, 65px);
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+section {
+  position: relative;
+}
+
+.block-wrapper {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 90px;
+}
+
+.gray-outline {
+  border: 1px solid var(--darkGray);
+  border-radius: 5px;
+}
+
+.instruction-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.gray-outline:first-child .instruction-wrapper {
+  row-gap: 30px;
+  padding: 40px 30px 30px 30px;
+}
+
+.gray-outline:last-child .instruction-wrapper {
+  padding: 40px 60px;
+}
+
+.instruction-wrapper p,
+.instruction-wrapper ul li,
+.instruction-wrapper ul li span,
+.steps-wrapper ol li {
+  font-size: clamp(26px, 2.5vw, 30px);
+}
+
+.instruction-wrapper p {
+  color: var(--darkBlue);
+  letter-spacing: 2px;
+}
+
+.instruction-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.instruction-wrapper ul li {
+  color: var(--darkBlue);
+  letter-spacing: 2px;
+}
+
+.instruction-wrapper ul li span {
+  color: var(--darkBlue);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-left: 70px;
+}
+
+.steps-wrapper p:last-child {
+  line-height: 35px;
+}
+
+.steps-wrapper ol {
+  list-style: decimal;
+}
+
+.steps-wrapper ol li {
+  color: var(--darkBlue);
+  letter-spacing: 2px;
+}
+
+.steps-wrapper ol li:first-child {
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+
+.env-variable {
+  width: fit-content;
+  background-color: var(--lightGray);
+  border: 1px solid var(--gray);
+  color: var(--darkBlue);
+  font-size: clamp(26px, 3vw, 35px);
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 15px;
+}
+
+section img {
+  height: 740px;
+  opacity: 0.1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+footer img {
+  height: 90px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  column-gap: 20px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  margin-top: -10px;
+}
+
+footer div p {
+  color: var(--darkBlue);
+  font-size: 20px;
+  font-weight: 600;
+}
