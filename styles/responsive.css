@@ -1,19 +1,22 @@
 @media screen and (max-width: 1265px) {
-  .gray-outline:first-child .instruction-wrapper {
-    padding: 30px;
+  section img {
+    height: 620px;
   }
 
-  .steps-wrapper {
-    row-gap: 20px;
-  }
-}
-
-@media screen and (max-width: 1180px) { 
   .gray-outline:first-child .instruction-wrapper {
-    row-gap: 20px;
+    padding: 25px;
+    row-gap: 15px;
   }
 
   .gray-outline:last-child .instruction-wrapper {
-    padding: 35px 55px;
+    padding: 30px 50px;
+  }
+
+  .steps-wrapper {
+    row-gap: 15px;
+  }
+
+  .block-wrapper {
+    padding-top: 0px;
   }
 }
